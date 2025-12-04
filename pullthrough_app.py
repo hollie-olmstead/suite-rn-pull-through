@@ -133,12 +133,12 @@ with col_header_2:
 st.markdown("---")
 
 # 5. Main Layout
-col_main_left, col_main_right = st.columns([1, 3])
+col_main_left, col_main_right = st.columns([1, 3], gap="large")
 
 # --- LEFT COLUMN: INPUTS ---
 with col_main_left:
     st.subheader("Scenario Inputs")
-    st.markdown("<div class='input-section'>", unsafe_allow_html=True)
+    # st.markdown("<div class='input-section'>", unsafe_allow_html=True)
     
     st.markdown("**Configuration**")
     
@@ -174,7 +174,7 @@ with col_main_left:
     
     strategy = st.radio("Strategy", ["Defensive (Protect)", "Offensive (Switch)"])
     
-    st.markdown("</div>", unsafe_allow_html=True)
+    # st.markdown("</div>", unsafe_allow_html=True)
 
 # --- RIGHT COLUMN: METRICS & VIZ ---
 with col_main_right:
